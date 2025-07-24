@@ -1,0 +1,136 @@
+/* ---------- GLOBAL STYLES ---------- */
+body {
+  background-color: #000;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ---------- TITLE ---------- */
+.title {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* ---------- CALCULATOR CONTAINER ---------- */
+.calculator {
+  background-color: #000;
+  border-radius: 16px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.calculator > div {
+  display: flex;
+  justify-content: center;
+}
+
+/* ---------- DISPLAY AREA ---------- */
+#displayArea {
+  width: 100%;
+  max-width: 300px;
+  height: 120px;
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}
+
+#userInput {
+  width: 100%;
+  font-size: 20px;
+  color: #bbb;
+  text-align: right;
+  margin-bottom: 5px;
+}
+
+#userOutput {
+  width: 100%;
+  font-size: 48px;
+  font-weight: bold;
+  background: none;
+  color: #fff;
+  border: none;
+  text-align: right;
+}
+
+/* ---------- BUTTONS ---------- */
+button {
+  height: 4rem;
+  width: 4rem;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 5px;
+  border: none;
+  border-radius: 100%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Function Buttons (AC, %, ±) */
+.functions {
+  background-color: #a5a5a5;
+  color: #000;
+}
+
+.functions:hover {
+  background-color: #838383;
+}
+
+.functions:active {
+  background-color: #6d6d6d;
+}
+
+/* Operator Buttons (+, -, ×, ÷, =) */
+.operators {
+  background-color: #ff9500;
+  color: #fff;
+}
+
+.operators:hover {
+  background-color: #b86e00;
+}
+
+.operators:active {
+  background-color: #7c4b00;
+}
+
+/* Number Buttons (0–9) & Decimal */
+.numbers,
+#decimal,
+#calc {
+  background-color: #333;
+  color: #fff;
+}
+
+.numbers:hover,
+#decimal:hover,
+#calc:hover {
+  background-color: #5f5f5f;
+}
+
+.numbers:active,
+#decimal:active,
+#calc:active {
+  background-color: #6d6d6d;
+}
+
+/* Equals Button Icon (if any) */
+#calc img {
+  width: 1.8rem;
+  height: 1.8rem;
+}
+
+

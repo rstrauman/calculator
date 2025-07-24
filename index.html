@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <h1 class="title">Calculator</h1>
+
+  <div class="calculator">
+
+    <!-- Display Area -->
+    <div id="displayArea">
+      <div id="userInput"></div> <!-- Shows equation -->
+      <input type="text" id="userOutput" readonly />
+    </div>
+
+    <!-- Row 1: AC, +/-, %, ÷ -->
+    <div>
+      <button id="ac" class="functions">AC</button>
+      <button id="plusMinus" class="functions">+/-</button>
+      <button id="percent" class="functions">%</button>
+      <button id="division" class="operators">÷</button>
+    </div>
+
+    <!-- Row 2: 7, 8, 9, × -->
+    <div>
+      <button id="seven" class="numbers">7</button>
+      <button id="eight" class="numbers">8</button>
+      <button id="nine" class="numbers">9</button>
+      <button id="multiplication" class="operators">×</button>
+    </div>
+
+    <!-- Row 3: 4, 5, 6, - -->
+    <div>
+      <button id="four" class="numbers">4</button>
+      <button id="five" class="numbers">5</button>
+      <button id="six" class="numbers">6</button>
+      <button id="subtraction" class="operators">−</button>
+    </div>
+
+    <!-- Row 4: 1, 2, 3, + -->
+    <div>
+      <button id="one" class="numbers">1</button>
+      <button id="two" class="numbers">2</button>
+      <button id="three" class="numbers">3</button>
+      <button id="addition" class="operators">+</button>
+    </div>
+
+    <!-- Row 5: icon, 0, ., = -->
+    <div>
+      <button id="calc">
+        <img src="https://img.icons8.com/ios-filled/50/ffffff/calculator.png" alt="Calculator Icon" />
+      </button>
+      <button id="zero" class="numbers">0</button>
+      <button id="decimal">.</button>
+      <button id="equals" class="operators">=</button>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
